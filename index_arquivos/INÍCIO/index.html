@@ -88,6 +88,75 @@ body {
 <!---------------------------------------------------------------------------------->
 <!DOCTYPE html><html><head>
 <meta name="viewport" content="width=device-width, initial-scale=1"><style>
+body {
+  font-family: "Lato", sans-serif;
+}
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.0s;
+  padding-top: 60px;
+}
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff700;
+  display: block;
+  transition: 0.0s;
+}
+.sidepanel a:hover {
+  color: #2bff00;
+}
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #fff700;
+  color: #000000;
+  padding: 10px 15px;
+  border: none;
+}
+.openbtn:hover {
+  background-color:#2bff00;
+}
+</style></head><body><div id="mySidepanel" class="sidepanel"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+
+
+</div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+</script></body></html> 
+<!---------------------------------------------------------------------------------->
+<!--##############################################################################-->
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!DOCTYPE html><html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1"><style>
 * {
   box-sizing: border-box;
 }
@@ -366,11 +435,25 @@ hr.new5 {
 <hr class="new4">
 <hr class="new5">
 <!----------------------------------------------------------->
-</body></html><!---------------------------------------------------------------------------------->
+</body></html>
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!DOCTYPE html><html><title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"><body>
+<div class="w3-bar">
+<!----------------------------------------
+  <button class="w3-bar-item w3-button w3-black" style="width:33.3%">Button</button>
+  <button class="w3-bar-item w3-button w3-teal" style="width:33.3%">Button</button>
+  <button class="w3-bar-item w3-button w3-red" style="width:33.3%">Button</button>
+<!---------------------------------------------------------------------------------->
+</div></div></body></html>
+<!---------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------->
 <!---------------------------------------RODAPÉ------------------------------------->
 <!---------------------------------------------------------------------------------->
-<!------------------------------------------------
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
 <!DOCTYPE html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"><style>
 .footer {
    position: fixed;
@@ -381,6 +464,11 @@ hr.new5 {
    color: white;
    text-align: center;
 }
-</style></head><body><a href="#top"><P><div class="footer"><FONT SIZE=+3><B>VOLTAR AO MENU</B></FONT></div></P></a></body></html> 
+</style></head><body><div class="footer">
+
+<button class="openbtn" onclick="openNav()"w3-bar-item w3-button w3-black" style="width:100%"><FONT SIZE=+1><B>🔐 PARTICULAR</B></FONT></button>
+
+
+</div></body></html> 
 <!---------------------------------------------------------------------------------->
 </div></body></html></center></body></html></div></body></html>
